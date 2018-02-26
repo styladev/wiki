@@ -1,3 +1,14 @@
+
+** Styla Wikijs fork for docker only **
+
+`./tools/` is the only directory of interest
+
+original README below
+
+---
+
+
+
 <div align="center">
 
 <img src="https://beta.requarks.io/svg/logo.svg" alt="Wiki.js" width="375" />

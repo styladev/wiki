@@ -29,6 +29,7 @@ config.yml
 
 # Data directories
 /repo
+/tools/data
 /data
 /uploads
 

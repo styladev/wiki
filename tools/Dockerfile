@@ -1,12 +1,14 @@
+# doesn't have version tags!
 FROM requarks/wiki:latest
 
-# Replace with your email address:
-ENV WIKI_ADMIN_EMAIL admin@example.com
+ARG ENVIRONMENT=stage
 
 WORKDIR /var/wiki
 
-# Replace your-config.yml with the path to your config file:
-ADD your-config.yml config.yml
+# github deploy private key
+COPY wikijs.prv wikijs.prv
+
+COPY config.$ENVIRONMENT.yml config.yml
 
 EXPOSE 3000
 ENTRYPOINT [ "node", "server" ]
