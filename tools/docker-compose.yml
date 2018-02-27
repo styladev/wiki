@@ -11,8 +11,8 @@ services:
     volumes:
       - ./data/mongo:/data/db
 
-  wikijs:
-    image: 'requarks/wiki:latest'
+  wiki:
+    image: wiki:local-latest
     build:
       context: .
     links:

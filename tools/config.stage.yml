@@ -9,14 +9,14 @@
 # Title of this site
 # ---------------------------------------------------------------------
 
-title: Wiki
+title: Styla Wiki (internal)
 
 # ---------------------------------------------------------------------
 # Full public path to the site, without the trailing slash
 # ---------------------------------------------------------------------
 # INCLUDE CLIENT PORT IF NOT 80/443!
 
-host: http://localhost
+host: https://wiki.stage.eu.magalog.net
 
 # ---------------------------------------------------------------------
 # Port the main server should listen to (80 by default)
@@ -59,13 +59,13 @@ langRtl: false
 public: false
 
 auth:
-  defaultReadAccess: false
+  defaultReadAccess: true
   local:
     enabled: true
   google:
     enabled: true
-    clientId: GOOGLE_CLIENT_ID
-    clientSecret: GOOGLE_CLIENT_SECRET
+    clientId: 610585490411-hn5c7q6hcaif483jhmvs49sie0k5udk7.apps.googleusercontent.com
+    clientSecret: 6q5ljoo-E4lC9VSbkDQ7IFuU
   microsoft:
     enabled: true
     clientId: MS_APP_ID
@@ -115,12 +115,14 @@ sessionSecret: 1234567890abcdefghijklmnopqrstuvxyz
 # Database Connection String
 # ---------------------------------------------------------------------
 
-db: mongodb://wikidb:27017/wiki
+db: mongodb://wiki-db.stage.eu.magalog.net:27017/wiki
 
 # ---------------------------------------------------------------------
 # Git Connection Info
 # ---------------------------------------------------------------------
 
+# Has issues w/ different banches! Until fixed, can only use master ...
+# https://github.com/Requarks/wiki/issues/227
 git:
   url: git@github.com:styladev/wikijs-content.git
   branch: master
