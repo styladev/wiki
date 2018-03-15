@@ -9,16 +9,20 @@ services:
     environment:
       - 'MONGO_LOG_DIR=/dev/null'
     volumes:
-      - ./data/mongo:/data/db
+      - wikidb:/data/db
 
   wiki:
     image: wiki:local-latest
     build:
       context: .
-    links:
-      - wikidb
+      dockerfile: tools/build/Dockerfile
+    volumes:
+      - ./client:/var/wiki/client
     depends_on:
       - wikidb
     ports:
       - '3000:3000'
     # entrypoint: node wiki configure 3000
+
+volumes:
+  wikidb:

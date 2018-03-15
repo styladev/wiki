@@ -1,5 +1,6 @@
 FROM node:8-alpine
-LABEL maintainer="requarks.io"
+
+ARG ENV=localdocker
 
 RUN apk update && \
     apk add bash curl git openssh supervisor --no-cache && \
@@ -8,11 +9,17 @@ RUN apk update && \
 
 WORKDIR /var/wiki
 
-COPY supervisord.conf /etc/supervisord.conf
 COPY . /var/wiki
 
+RUN yarn install
+
+COPY tools/config.$ENV.yml /var/wiki/config.yml
+COPY tools/wikijs.prv /var/wiki/wikijs.prv
+RUN chmod 600 wikijs.prv
+
 ENV WIKI_JS_HEROKU=1
+ENV WIKI_ADMIN_EMAIL admin@styla.com
 
 EXPOSE 3000
 
-CMD ["supervisord", "--nodaemon", "-c", "/etc/supervisord.conf"]
+CMD ["yarn", "run", "dev"]
