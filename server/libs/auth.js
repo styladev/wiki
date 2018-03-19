@@ -261,7 +261,8 @@ module.exports = function (passport) {
               provider: 'local',
               email: process.env.WIKI_ADMIN_EMAIL,
               name: 'Administrator',
-              password: '$2a$04$MAHRw785Xe/Jd5kcKzr3D.VRZDeomFZu2lius4gGpZZ9cJw7B7Mna', // admin123 (default)
+              // created by node -e "require('bcryptjs-then').hash('puff3wnr').then(hash=>{console.log(hash)});"
+              password: '$2a$10$ikV3Ul.E8EKoreNJRFr82.CiIWtGxay8m3r3fR0doMgFbsH7fg/L2',
               rights: [{
                 role: 'admin',
                 path: '/',
