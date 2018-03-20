@@ -137,47 +137,46 @@ a.nav-item h1 {
   color: #222;
 }
 
+.nav.is-cyan a.nav-item h1:hover {
+  color: #A4B4BE;
+}
+
 .nav.is-cyan .control input[type=text]:placeholder-shown {
   background-color: #FFF;
-  border-color: #222;
-  color: #222;
+  border-color: #A4B4BE;
+  color: #A4B4BE;
 }
 
-.nav.is-cyan .control input[type=text]:focus {
-  background-color: #FFF;
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .nav-center .nav-item .control input#search-input.input[type=text]:placeholder-shown {
+  border-color: #A4B4BE;
+  color: #A4B4BE;
 }
 
-.nav.is-cyan .control input {
-  background-color: #FFF;
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .control input#search-input.input::-webkit-input-placeholder {
+  color: #A4B4BE;
 }
 
-.nav.is-cyan p.control input[type=text]:focus {
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .control input#search-input.input::-moz-placeholder {
+  color: #A4B4BE;
 }
 
-.nav.is-cyan p.control input[type=text]:placeholder-shown {
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .control input#search-input.input:focus {
+  box-shadow: inset 0 0 5px 0 rgba(34, 34, 34, 0.5);
 }
 
-.nav.is-cyan p.control input#search-input.input:placeholder-shown {
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .nav-item a.button {
+  background-color: #4E697D;
+  color: #FFF;
 }
 
-.nav.is-cyan .control input#search-input.input:placeholder-shown {
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .nav-item a.button:hover {
+  background-color: #394A57;
+  color: #A4B4BE;
 }
 
-.nav.is-cyan p.control {
-  border-color: #222;
-  color: #222;
+.nav.is-cyan .nav-item a.button.is-outlined {
+  background-color: #A4B4BE;
+  color: #FFF;
 }
 
 /*
