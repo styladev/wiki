@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: $core-font-standard;
+  font-family: "NeueHaasUnicaPro", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   height: 100%;
 }
 *, *:before, *:after {
@@ -121,4 +122,171 @@ a {
   @include widescreen {
     display: none !important;
   }
+}
+
+// michal's updates
+
+// HEADER
+
+nav#header.nav.is-cyan {
+  background-color: #FFF;
+  box-shadow: none;
+}
+
+a.nav-item h1 {
+  color: #222;
+}
+
+.nav.is-cyan .control input[type=text]:placeholder-shown {
+  background-color: #FFF;
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan .control input[type=text]:focus {
+  background-color: #FFF;
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan .control input {
+  background-color: #FFF;
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan p.control input[type=text]:focus {
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan p.control input[type=text]:placeholder-shown {
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan p.control input#search-input.input:placeholder-shown {
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan .control input#search-input.input:placeholder-shown {
+  border-color: #222;
+  color: #222;
+}
+
+.nav.is-cyan p.control {
+  border-color: #222;
+  color: #222;
+}
+
+/*
+
+.nav.is-cyan .control input[type=text] {
+  border-color: #222;
+}
+
+.nav.is-cyan .control input[type=text]:placeholder-shown {
+  color: #222;
+  border-color: #222;
+  background-color: #FFF;
+}
+
+.nav.is-cyan .control input[type=text]:focus {
+  border-color: #222;
+  box-shadow: inset 0 0 5px 0 rgb(78, 105, 125);
+}
+*/
+
+// SIDEBAR
+
+div.column.is-narrow.is-hidden-touch.sidebar aside {
+  padding-top: 0px;
+}
+
+div.column.is-narrow.is-hidden-touch.sidebar {
+  background-color: #4E697D;
+}
+
+.is-alternate-cyan .sidebar aside div.sidebar-label {
+  text-align:left;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #A4B4BE;
+  color: #000;
+}
+.is-alternate-cyan .sidebar aside div.sidebar-label span {
+  font-weight: 200;
+  text-transform: none;
+}
+
+.is-alternate-cyan .sidebar aside ul.sidebar-menu li a {
+  color: #FFF;
+  font-weight: 200;
+}
+
+.is-alternate-cyan .sidebar aside ul.sidebar-menu li a:hover,
+.is-alternate-cyan .sidebar aside ul.sidebar-menu li a i {
+  color: #A4B4BE;
+}
+
+// MAIN COLUMN
+
+div.column {
+  background-color: #FFF;
+}
+
+div.hero {
+  background-color: #CCC;
+  margin-bottom: 1em;
+}
+
+div.hero h1.title {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  color: #4E697D;
+  font-weight: 200;
+}
+
+div.hero h2.subtitle {
+  font-size: 1em;
+  color: #222;
+  font-weight: 200;
+}
+
+div.content.mkcontent.is-code-dark h1 {
+  padding-left: 2em;
+  color: #4E697D;
+  border-bottom: none;
+  font-weight: 200;
+}
+
+div.content.mkcontent.is-code-dark h1 {
+  background-image: none;
+  background-color: #E5E5E5;
+}
+
+.mkcontent a.toc-anchor.nc-icon-outline {
+  display: none;
+}
+
+div.content.mkcontent.is-code-dark p {
+  padding-left: 2em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #222;
+}
+
+// FOOTER
+
+footer.footer.is-cyan {
+  background-color: #A4B4BE;
+  color: #FFF;
+}
+
+footer.footer.is-cyan span a,
+footer.footer.is-cyan ul li a,
+ {
+  color: #FFF;
 }

@@ -7,6 +7,7 @@
 // - FontAwesome, by Dave Gandy, licensed under SIL OFL 1.1
 // ========================================
 
+/*
 @font-face {
   font-family: 'wiki-js';
   src:
@@ -15,6 +16,25 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
+
+@font-face {
+  font-family: 'NeueHaasUnicaPro';
+  font-weight: bold;
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.eot");
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.eot?#iefix") format("embedded-opentype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.woff2") format("woff2"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.woff") format("woff"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.ttf") format("truetype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Bold/Neue_Haas_Unica_Pro_Bold.svg#wf") format("svg"); }
+
+@font-face {
+  font-family: 'NeueHaasUnicaPro';
+  font-weight: normal;
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.eot");
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.eot?#iefix") format("embedded-opentype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.woff2") format("woff2"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.woff") format("woff"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.ttf") format("truetype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Light/Neue_Haas_Unica_Pro_Light.svg#wf") format("svg"); }
+
+@font-face {
+  font-family: 'NeueHaasUnicaPro';
+  font-weight: 200;
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.eot");
+  src: url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.eot?#iefix") format("embedded-opentype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.woff2") format("woff2"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.woff") format("woff"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.ttf") format("truetype"), url("https://www.styla.com/wp-content/themes/styla/assets/fonts/Neue_Haas_Unica_Pro_Thin/NeueHaasUnicaProThin.svg#wf") format("svg"); }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
