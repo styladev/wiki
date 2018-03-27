@@ -133,8 +133,20 @@ nav#header.nav.is-cyan {
   box-shadow: none;
 }
 
+a.nav-item {
+  padding-left: 1em;
+}
+
 a.nav-item h1 {
+  padding-left: 1em;
   color: #222;
+  background-image: url(http://localhost:3000/favicons/favicon-16x16.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+i.nc-icon-outline.ui-2_layers:before {
+  content: none;
 }
 
 .nav.is-cyan a.nav-item h1:hover {
@@ -408,6 +420,30 @@ div.content.mkcontent.is-code-dark blockquote {
 div.content.mkcontent.is-code-dark div.indent-h2 blockquote p {
   padding-left: 0em;
   color: #A4B4BE;
+}
+
+div.content.mkcontent.is-code-dark div.buttons {
+  width: 100%;
+  padding: 2em 1.5em 1em 0;
+}
+
+div.content.mkcontent.is-code-dark a.button-previous,
+div.content.mkcontent.is-code-dark a.button-next {
+  float: left;
+  padding: 1em;
+  font-size: 1em;
+  background-color: #4c697d;
+  color: #FFF;
+  text-decoration: none;
+}
+
+div.content.mkcontent.is-code-dark a.button-previous:hover,
+div.content.mkcontent.is-code-dark a.button-next:hover {
+  color: #A4B4BE;
+}
+
+div.content.mkcontent.is-code-dark a.button-next {
+  float: right;
 }
 
 // FOOTER
